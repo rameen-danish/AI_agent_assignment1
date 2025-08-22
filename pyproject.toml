@@ -1,0 +1,21 @@
+[project]
+name = "ai-agent-assignment1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rameen-danish", email = "rameenrashid15@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "openai-agents>=0.2.8",
+]
+
+[project.scripts]
+ai-agent-assignment1 = "ai_agent_assignment1:main"
+start-inventory = "inventory_agent.main:start"
+hooks = "hooks.main:start"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
